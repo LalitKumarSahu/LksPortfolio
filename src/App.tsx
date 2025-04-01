@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="bg-[#0a192f] min-h-screen cursor-none">
       {loading ? (
-        <IntroPage setLoading={setLoading} /> // Show loader when loading
+        <IntroPage />
       ) : (
         <>
           <CustomCursor />
