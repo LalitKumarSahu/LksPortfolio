@@ -8,7 +8,7 @@ import Experience from "./componets/Experience";
 import Projects from "./componets/Projects";
 import Skills from "./componets/Skills";
 import Contact from "./componets/Contact";
-import CustomCursor from "./componets/Customcursor";
+import CustomCursor from "./componets/CustomCursor";
 import IntroPage from "./componets/IntroPage";
 
 function App() {
