@@ -120,7 +120,7 @@ const Skills: React.FC = () => {
 
       {/* Animation */}
       <div className="absolute inset-0 -z-0 flex justify-center items-center top-30 bottom-30  flex-wrap">
-        {[...Array(9)].map((_, index) => (
+        {[...Array(6)].map((_, index) => (
           <div key={index} className="">
             <Lottie
               animationData={animation}
