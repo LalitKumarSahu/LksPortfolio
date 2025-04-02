@@ -5,7 +5,7 @@ export default function CustomCursor() {
   const [innerPosition, setInnerPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const moveCursor = (e) => {
+    const moveCursor = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
 
       // Slight delay for inner cursor to create a trailing effect

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import photo from "../componets/WhatsApp Image 2025-04-01 at 21.08.15_d4ed22da.jpg";
 const About = () => {

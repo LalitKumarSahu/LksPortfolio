@@ -1,9 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
 import logo from "../assets/Black_Illustrated_Lion_Hotel_Logo__4_-removebg-preview.png";
 
 const NavBar = () => {
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });

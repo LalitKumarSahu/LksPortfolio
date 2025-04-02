@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react"; // Correct package
 import animationhero from "./animationhero.json"; // JSON file

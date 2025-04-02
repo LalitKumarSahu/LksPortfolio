@@ -1,5 +1,3 @@
-import React from "react";
-
 const IntroPage = () => {
   // We still need keyframes CSS since Tailwind doesn't handle animations like this
   const keyframesStyles = `

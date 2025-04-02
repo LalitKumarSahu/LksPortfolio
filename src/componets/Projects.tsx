@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiMongodb,

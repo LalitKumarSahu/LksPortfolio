@@ -1,5 +1,3 @@
-import React from "react";
-
 const Right = () => {
   return (
     <div className="right-0 bottom-0 h-screen fixed flex items-end pr-8">

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Skills from "./Skills";
+import { useState } from "react";
 
 const Experience = () => {
   const experiences = [
