@@ -26,18 +26,18 @@ function App() {
       ) : (
         <>
           <CustomCursor />
-          <div className=" sticky top-0  z-10">
-            <NavBar />{" "}
+          <div className="sticky top-0 z-10">
+            <NavBar />
           </div>
 
-          <div className="flex justify-between">
-            {/* Left Side */}
-            <div className="w-20">
+          <div className="flex flex-col md:flex-row justify-between">
+            {/* Left Side - Hidden on small screens */}
+            <div className="hidden md:block md:w-20">
               <Left />
             </div>
 
             {/* Center Content */}
-            <div className="flex flex-col items-center justify-center flex-1 max-w-[80%] gap-8 px-4 md:px-0">
+            <div className="flex flex-col items-center justify-center w-full md:max-w-[80%] gap-8 px-4 md:px-0">
               <section id="hero">
                 <HeroSection />
               </section>
@@ -58,8 +58,8 @@ function App() {
               </section>
             </div>
 
-            {/* Right Side */}
-            <div className="w-20">
+            {/* Right Side - Hidden on small screens */}
+            <div className="hidden md:block md:w-20">
               <Right />
             </div>
           </div>

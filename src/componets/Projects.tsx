@@ -1,4 +1,3 @@
-
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiMongodb,
@@ -79,62 +78,65 @@ const Projects = () => {
         <div className="h-[1px] w-full bg-lightGary"></div>
       </div>
 
-      {/* Projects List */}
+      {/* Project Cards */}
       {projects.map((project, index) => (
         <div
           key={index}
           className={`flex flex-col md:flex-row ${
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
-          } gap-8 items-center relative`}
+          } gap-8 items-center`}
         >
-          {/* Image */}
-          <div className="md:w-2/3 rounded-md shadow-lg overflow-hidden relative">
-            <img
-              className="rounded-md w-full h-full object-cover"
-              src={project.image}
-              alt={`${project.title} Screenshot`}
-            />
-            <div className="absolute inset-0 bg-lightNavy/50 hover:bg-white/0 transition"></div>
-          </div>
+          {/* Image with hover effect */}
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group w-full md:w-2/3 rounded-md shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+          >
+            <div className="relative">
+              <img
+                src={project.image}
+                alt={`${project.title} Screenshot`}
+                className="rounded-md w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-lightNavy/50 group-hover:bg-transparent transition-all duration-300"></div>
+            </div>
+          </a>
 
           {/* Details */}
           <div
-            className={`md:w-1/2 flex flex-col gap-4 ${
+            className={`w-full md:w-1/2 flex flex-col gap-4 ${
               index % 2 === 0
                 ? "text-right md:items-end"
                 : "text-left md:items-start"
-            } relative md:absolute ${
-              index % 2 === 0 ? "md:right-0" : "md:left-0"
             }`}
           >
             <p className="font-mono text-md text-lightNavy">Featured Project</p>
             <h2 className="text-xl font-bold text-lightGary">
               {project.title}
             </h2>
-            <p className="text-lightGary w-[80%] bg-gray-800 p-4 rounded-sm hover:shadow-md max-w-md">
+            <p className="text-lightGary bg-gray-800 p-4 rounded-sm shadow-sm max-w-md">
               {project.description}
             </p>
-            <p className="text-lightNavy text-sm flex gap-2 items-center">
-              {project.techStack.map((tech, idx) => (
-                <span key={idx} className="flex items-center gap-1">
-                  {tech}
-                </span>
+            <div className="text-lightNavy text-sm flex gap-2 flex-wrap">
+              {project.techStack.map((tech, i) => (
+                <span key={i}>{tech}</span>
               ))}
-            </p>
-            <div className="flex gap-4">
+            </div>
+            <div className="flex gap-4 mt-2">
               <a
                 href={project.github}
-                className="flex items-center gap-2 text-lightGary hover:text-lightNavy underline transition"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lightGary hover:text-lightNavy underline transition"
               >
                 <FaGithub /> GitHub
               </a>
               <a
                 href={project.demo}
-                className="flex items-center gap-2 text-lightGary hover:text-lightNavy underline transition"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lightGary hover:text-lightNavy underline transition"
               >
                 <FaExternalLinkAlt /> Live Demo
               </a>

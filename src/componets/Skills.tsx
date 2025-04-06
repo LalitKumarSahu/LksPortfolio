@@ -113,30 +113,26 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <div className="mt-16 w-[90%] md:w-[75%] mx-auto flex flex-col  items-center gap-12 relative">
+    <div className="mt-16 w-[90%] md:w-[75%] mx-auto flex flex-col items-center gap-12 relative">
       <h1 className="text-3xl text-lightGary font-bold text-center border-b border-lightNavy pb-4">
         Skills
       </h1>
 
-      {/* Animation */}
-      <div className="absolute inset-0 -z-0 flex justify-center items-center top-30 bottom-30  flex-wrap">
-        {[...Array(6)].map((_, index) => (
-          <div key={index} className="">
-            <Lottie
-              animationData={animation}
-              loop
-              autoplay
-              className="w-full h-40 opacity-80"
-            />
-          </div>
-        ))}
+      {/* Single background animation */}
+      <div className="absolute inset-0 -z-10 flex justify-center items-center opacity-20 pointer-events-none">
+        <Lottie
+          animationData={animation}
+          loop
+          autoplay
+          className="w-[500px] h-[500px]"
+        />
       </div>
 
       {/* Skills List */}
       <div
         ref={scrollRef}
         onWheel={handleWheel}
-        className="grid grid-cols-6 gap-8  no-scrollbar  p-8 scroll-smooth "
+        className="flex flex-wrap justify-center gap-8 no-scrollbar p-8 scroll-smooth"
       >
         {skills.map((skill, index) => (
           <div

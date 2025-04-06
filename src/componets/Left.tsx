@@ -10,7 +10,7 @@ const Left = () => {
           href="https://github.com/chandannekya"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer"
+          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
         >
           <SiGithub />
         </a>
@@ -18,7 +18,7 @@ const Left = () => {
           href="https://www.linkedin.com/in/chandannekya/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer"
+          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
         >
           <FaLinkedinIn />
         </a>
@@ -26,7 +26,7 @@ const Left = () => {
           href="https://www.geeksforgeeks.org/user/chandannekya/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer"
+          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
         >
           <SiGeeksforgeeks />
         </a>
@@ -34,7 +34,7 @@ const Left = () => {
           href="https://www.instagram.com/chandannekya/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer"
+          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
         >
           <FaInstagram />
         </a>

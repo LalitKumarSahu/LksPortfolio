@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import photo from "../componets/WhatsApp Image 2025-04-01 at 21.08.15_d4ed22da.jpg";
+
 const About = () => {
   const activities = [
     "Problem Solving",
@@ -15,7 +16,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen px-6 md:px-28 mt-10"
+      className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-28 mt-10"
     >
       <motion.div
         className="w-full max-w-6xl flex flex-col md:flex-row gap-10"
@@ -26,7 +27,7 @@ const About = () => {
         {/* Left Section */}
         <motion.div className="md:w-1/2">
           <motion.h1
-            className="flex items-center gap-4 text-3xl font-bold text-lightGary mb-4"
+            className="flex items-center gap-4 text-2xl sm:text-3xl font-bold text-lightGary mb-4"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -37,24 +38,23 @@ const About = () => {
           </motion.h1>
 
           <motion.p
-            className="text-sm text-lightGary leading-6 mb-6 text-justify"
+            className="text-sm sm:text-base text-lightGary leading-6 mb-6 text-justify"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Hello! I’m Chandan, hailing from the culturally rich city of
-            Lucknow, known as the City of Nawabs. I am a curious, hardworking,
-            dedicated, and goal-driven individual who believes in continuous
-            growth and learning. <br /> <br />
-            Along with a strong sense of responsibility, I carry good moral
-            values, organizational skills, and an eye for detail. <br /> <br />
-            Currently, I am pursuing my Bachelor's degree in Computer Science
-            and Engineering at the University of Lucknow. My primary interests
-            lie in Web Development and Data Science, where I love transforming
-            ideas into real-world applications. <br /> <br />I actively
-            contribute to various coding communities and have led initiatives as
-            part of AlgoZenith and Coding Connoisseurs. I’ve been fortunate to
-            be recognized for my consistent efforts and leadership skills.
+            Hello! I’m Chandan, from the culturally rich city of Lucknow, known
+            as the City of Nawabs. I'm a curious, hardworking, and goal-driven
+            individual who believes in continuous learning. <br />
+            <br />
+            I carry strong moral values, organizational skills, and a keen eye
+            for detail. I'm currently pursuing a Bachelor's in Computer Science
+            & Engineering at the University of Lucknow.
+            <br />
+            <br />
+            My interests lie in Web Development and Data Science, and I love
+            bringing real-world ideas to life. I'm actively involved in coding
+            communities like AlgoZenith and Coding Connoisseurs.
           </motion.p>
 
           <motion.div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -83,12 +83,13 @@ const About = () => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <motion.div
-            className=" bg-lightNavy/20 w-64 grayscale hover:grayscale-0 rounded-md flex justify-center items-center    text-white text-lg shadow-lg"
-            whileHover={{ scale: 1.1 }}
+            className="bg-lightNavy/20 w-48 sm:w-60 md:w-64 grayscale hover:grayscale-0 rounded-md flex justify-center items-center text-white text-lg shadow-lg overflow-hidden"
+            whileHover={{ scale: 1.05 }}
           >
             <img
               src={photo}
-              className=" object-center object-contain rounded-lg p-2   "
+              alt="Chandan"
+              className="object-cover rounded-lg p-2 w-full h-full"
             />
           </motion.div>
         </motion.div>
