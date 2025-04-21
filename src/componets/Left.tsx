@@ -1,48 +1,59 @@
 import { SiGithub, SiGeeksforgeeks } from "react-icons/si";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Left = () => {
   return (
-    <div className="flex items-end fixed left-0 h-screen">
-      <div className="p-5 text-3xl flex flex-col items-center gap-6 text-[#64ffda]">
+    <motion.div
+      className="flex items-end bottom-0  fixed left-0 justify-end h-screen"
+      initial={{ x: -50, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.div
+        className="p-5 pb-0 text-3xl flex flex-col items-center justify-center gap-8 text-[#64ffda]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
         {/* Social Icons */}
-        <a
-          href="https://github.com/chandannekya"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-        >
-          <SiGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/chandannekya/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-        >
-          <FaLinkedinIn />
-        </a>
-        <a
-          href="https://www.geeksforgeeks.org/user/chandannekya/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-        >
-          <SiGeeksforgeeks />
-        </a>
-        <a
-          href="https://www.instagram.com/chandannekya/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white cursor-pointer transition-transform duration-300 hover:-translate-y-1"
-        >
-          <FaInstagram />
-        </a>
+        {[
+          { icon: <SiGithub />, link: "https://github.com/chandannekya" },
+          {
+            icon: <FaLinkedinIn />,
+            link: "https://www.linkedin.com/in/chandannekya/",
+          },
+          {
+            icon: <SiGeeksforgeeks />,
+            link: "https://www.geeksforgeeks.org/user/chandannekya/",
+          },
+          {
+            icon: <FaInstagram />,
+            link: "https://www.instagram.com/chandannekya/",
+          },
+        ].map((item, index) => (
+          <motion.a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, color: "#ffffff" }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="cursor-pointer"
+          >
+            {item.icon}
+          </motion.a>
+        ))}
 
         {/* Vertical Line */}
-        <div className="w-[1px] h-32 bg-[#ccd6f6] mt-4"></div>
-      </div>
-    </div>
+        <motion.div
+          className="w-[1px] h-36 bg-[#ccd6f6] mt-6"
+          initial={{ height: 0 }}
+          animate={{ height: "8rem" }}
+          transition={{ duration: 1, delay: 1 }}
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 

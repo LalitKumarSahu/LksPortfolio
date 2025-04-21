@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiMongodb,
@@ -69,7 +70,13 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="mt-16 w-[90%] md:w-[75%] mx-auto flex flex-col gap-16">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="mt-16 w-[90%] md:w-[75%] mx-auto flex flex-col gap-16"
+    >
       {/* Heading */}
       <div className="flex items-center gap-4">
         <h1 className="text-3xl font-bold text-lightGary whitespace-nowrap">
@@ -80,18 +87,23 @@ const Projects = () => {
 
       {/* Project Cards */}
       {projects.map((project, index) => (
-        <div
+        <motion.div
           key={index}
+          initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
           className={`flex flex-col md:flex-row ${
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
           } gap-8 items-center`}
         >
           {/* Image with hover effect */}
-          <a
+          <motion.a
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="group w-full md:w-2/3 rounded-md shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+            whileHover={{ scale: 1.05 }}
+            className="group w-full md:w-2/3 rounded-md shadow-lg overflow-hidden cursor-pointer transition-transform duration-300"
           >
             <div className="relative">
               <img
@@ -101,7 +113,7 @@ const Projects = () => {
               />
               <div className="absolute inset-0 bg-lightNavy/50 group-hover:bg-transparent transition-all duration-300"></div>
             </div>
-          </a>
+          </motion.a>
 
           {/* Details */}
           <div
@@ -142,9 +154,9 @@ const Projects = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
