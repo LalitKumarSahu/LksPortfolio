@@ -32,7 +32,7 @@ const HeroSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
-        Chandan
+        Lalit
       </motion.h1>
 
       {/* Sub Heading */}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         <button
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1Jz9QsWBNCS664i3DhMlWsydxoCR-9n0k/view?usp=sharing"
+              "https://drive.google.com/file/d/1E_FJNqEvsjC1rgqZ4i-hezlX2rSd__IU/view?usp=sharing"
             )
           }
           className="border border-[#64ffda] text-lightGary rounded px-6 cursor-pointer py-2 font-mono text-sm sm:text-md hover:bg-[#64ffda]/10 transition duration-300 ease-in-out hover:text-[#64ffda]"

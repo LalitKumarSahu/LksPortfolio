@@ -16,12 +16,12 @@ const Right = () => {
       >
         {/* Rotated Email with hover transition */}
         <motion.a
-          href="mailto:chandannekya@gmail.com"
+          href="mailto:shahulalit5@gmail.com"
           className="tracking-wider text-2xl hover:text-white transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:drop-shadow-md cursor-pointer"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
           whileHover={{ scale: 1.1, color: "#ffffff" }}
         >
-          chandannekya@gmail.com
+          shahulalit5@gmail.com
         </motion.a>
 
         {/* Vertical Line */}

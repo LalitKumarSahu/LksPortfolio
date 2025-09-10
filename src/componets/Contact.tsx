@@ -48,7 +48,7 @@ const Contact = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => {
-          window.open("mailto:chandannekya@gmail.com");
+          window.open("mailto:shahulalit5@gmail.com");
         }}
         className="border-2 border-lightNavy hover:bg-lightNavy/10 transition-all duration-300 font-mono px-6 py-2 rounded text-lightGary text-base cursor-pointer mt-2"
       >

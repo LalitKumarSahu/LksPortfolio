@@ -75,7 +75,7 @@ const NavBar = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1Jz9QsWBNCS664i3DhMlWsydxoCR-9n0k/view?usp=sharing"
+                  "https://drive.google.com/file/d/1E_FJNqEvsjC1rgqZ4i-hezlX2rSd__IU/view?usp=sharing"
                 )
               }
               className="border border-[#64ffda] rounded px-4 py-2 font-mono text-sm hover:bg-[#64ffda]/5 cursor-pointer hover:text-[#64ffda]"
@@ -113,7 +113,7 @@ const NavBar = () => {
           <button
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1Jz9QsWBNCS664i3DhMlWsydxoCR-9n0k/view?usp=sharing"
+                "https://drive.google.com/file/d/1E_FJNqEvsjC1rgqZ4i-hezlX2rSd__IU/view?usp=sharing"
               )
             }
             className="border border-[#64ffda] rounded px-4 py-2 font-mono text-sm hover:bg-[#64ffda]/5 cursor-pointer hover:text-[#64ffda] w-max"

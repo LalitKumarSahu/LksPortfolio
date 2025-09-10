@@ -45,12 +45,8 @@ const skillCategories = {
       name: "JavaScript",
       icon: <FaJsSquare className="text-yellow-400" size={25} />,
     },
-    {
-      name: "TypeScript",
-      icon: <SiTypescript className="text-blue-600" size={25} />,
-    },
+  
     { name: "React", icon: <FaReact className="text-blue-400" size={25} /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-white" size={25} /> },
     { name: "Redux", icon: <SiRedux className="text-purple-500" size={25} /> },
     {
       name: "Tailwind CSS",
@@ -85,15 +81,9 @@ const skillCategories = {
       name: "MongoDB",
       icon: <SiMongodb className="text-green-400" size={25} />,
     },
-    {
-      name: "PostgreSQL",
-      icon: <SiPostgresql className="text-blue-400" size={25} />,
-    },
+  
     { name: "MySQL", icon: <SiMysql className="text-blue-600" size={25} /> },
-    {
-      name: "Firebase",
-      icon: <SiFirebase className="text-yellow-500" size={25} />,
-    },
+
     { name: "SQL", icon: <FaDatabase className="text-indigo-400" size={25} /> },
   ],
   Programming: [
@@ -101,10 +91,7 @@ const skillCategories = {
     { name: "Python", icon: <FaPython className="text-blue-400" size={25} /> },
     { name: "C", icon: <FaDatabase className="text-gray-400" size={25} /> },
   ],
-  DevOps: [
-    { name: "Docker", icon: <SiDocker className="text-blue-500" size={25} /> },
-    { name: "Linux", icon: <SiLinux className="text-yellow-400" size={25} /> },
-  ],
+
   Tools: [
     { name: "Git", icon: <FaGitAlt className="text-orange-500" size={25} /> },
     { name: "GitHub", icon: <FaGithub className="text-white" size={25} /> },

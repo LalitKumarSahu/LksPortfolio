@@ -4,26 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
-      company: "Softricity Pvt Ltd",
-      role: "Software Developer Intern",
-      duration: "Jan 2025 - Mar 2025",
+      company: "Personal Project",
+      role: "Full Stack Developer",
+      duration: "Feb 2025 - Present",
       work: [
-        "Developed and optimized scalable web applications using the MERN stack, improving performance and user experience.",
-        "Designed and implemented RESTful APIs, enhancing backend efficiency and reducing response time by 30%.",
-        "Implemented secure authentication and authorization using JWT, ensuring data integrity and user access control.",
-        "Optimized database queries and integrated third-party APIs to improve application functionality and efficiency.",
-      ],
-    },
-    {
-      company: "GSSoC'24",
-      role: "Open Source Contributor",
-      duration: "May 2024 - Aug 2024",
-      work: [
-        "Contributed to multiple open-source projects, fixing bugs, adding new features, and optimizing codebases.",
-        "Improved project documentation, making repositories more accessible and beginner-friendly.",
-        "Collaborated with maintainers and fellow developers to follow best coding practices and adhere to project guidelines.",
-        "Worked extensively with Git, GitHub, and CI/CD pipelines, ensuring seamless integration and deployment.",
-        "Participated in code reviews, enhancing code quality, readability, and maintainability.",
+        "Developed a task management web app using React, Node.js, and MongoDB.",
+        "Implemented user authentication and role-based access control.",
+        "Used Redux for state management and deployed the app using Vercel.",
+        "Focused on responsive design and user experience enhancements.",
       ],
     },
   ];

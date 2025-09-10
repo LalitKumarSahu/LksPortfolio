@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import photo from "../componets/WhatsApp Image 2025-04-01 at 21.08.15_d4ed22da.jpg";
+import photo from "../componets/lkp.jpg";
 
 const About = () => {
   const activities = [
@@ -47,18 +47,15 @@ const About = () => {
             viewport={{ once: true }}
             className="text-sm sm:text-base text-lightGary leading-6 mb-6 text-justify"
           >
-            Hello! I’m Chandan, from the culturally rich city of Lucknow, known
-            as the City of Nawabs. I'm a curious, hardworking, and goal-driven
-            individual who believes in continuous learning. <br />
-            <br />
-            I carry strong moral values, organizational skills, and a keen eye
-            for detail. I'm currently pursuing a Bachelor's in Computer Science
-            & Engineering at the University of Lucknow.
-            <br />
-            <br />
-            My interests lie in Web Development and Data Science, and I love
-            bringing real-world ideas to life. I'm actively involved in coding
-            communities like AlgoZenith and Coding Connoisseurs.
+            Hello! I'm <strong>Lalit Kumar Sahu</strong>, a passionate tech enthusiast from Lucknow, currently pursuing my B.Tech in Computer Science and Engineering at the University of Lucknow.
+         <br /><br />
+
+         I am a dedicated and curious learner with a strong interest in full-stack web development. I've been building projects using the MERN stack, including an e-commerce website and a React  weather app.
+          <br /><br />
+          I'm also actively improving my problem-solving skills through platforms like LeetCode, and have achieved over 200+ days of coding streak. Apart from that, I enjoy learning new technologies and continuously upgrading my skills.
+          <br /><br />
+          My goal is to become a skilled full-stack developer and contribute to meaningful projects that solve real-world problems.
+
           </motion.p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

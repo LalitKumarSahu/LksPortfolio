@@ -18,18 +18,15 @@ const Left = () => {
       >
         {/* Social Icons */}
         {[
-          { icon: <SiGithub />, link: "https://github.com/chandannekya" },
+          { icon: <SiGithub />, link: "https://github.com/LalitKumarSahu" },
           {
             icon: <FaLinkedinIn />,
-            link: "https://www.linkedin.com/in/chandannekya/",
+            link: "https://www.linkedin.com/in/lalit-sahu-45788725a",
           },
-          {
-            icon: <SiGeeksforgeeks />,
-            link: "https://www.geeksforgeeks.org/user/chandannekya/",
-          },
+          
           {
             icon: <FaInstagram />,
-            link: "https://www.instagram.com/chandannekya/",
+            link: "https://www.instagram.com/_____sanatani_____lalit___/",
           },
         ].map((item, index) => (
           <motion.a

@@ -7,26 +7,42 @@ import {
   SiApachekafka,
   SiSocketdotio,
 } from "react-icons/si";
-import img1 from "../assets/Screenshot 2024-08-18 165632.png";
-import img2 from "../assets/Screenshot 2025-03-22 133847.png";
-import img3 from "../assets/Screenshot 2025-03-22 134046.png";
-import img4 from "../assets/Screenshot 2025-03-22 134336.png";
-import img5 from "../assets/Screenshot 2025-03-22 134829.png";
+import img1 from "../assets/WONDERLUST.png";
+import img2 from "../assets/lms img.jpeg";
+
+import img3 from "../assets/react.png";
+import img4 from "../assets/ecomerce.png";
+import img5 from "../assets/rejouice.png";
+import img6 from "../assets/youtube.png";
+
+
+
 
 const projects = [
   {
-    title: "Clean Breath",
+    title: "WonderLust",
     description:
-      "A web app promoting clean air by suggesting suitable plants to reduce pollution. Includes blogs & plant purchasing features.",
+      "WonderLust is a full stack travel listing web app built Node.js, Express.js, MongoDB, and EJS. it features user authentication, CRUD operations,  reviews with ratings, and image uploads via Cloudinary. The app follows MVC architecture with RESTful routes, error handling, and responsive Bootstrap design",
     techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
     image: img1,
-    github: "https://github.com/chandannekya/Clean-Breath",
-    demo: "https://cleanbreath.netlify.app/",
+    github: "https://github.com/LalitKumarSahu/WonderLust.git",
+    demo: "https://wonderlust-1-ne7w.onrender.com/listings",
   },
   {
-    title: "Wagging Wonders",
+  title: "LMS (Learning Management System)",
+  description:
+    "A full stack Learning Management System built using React.js, Node.js, Express.js, and MongoDB. It features role-based access for Admin, Instructor, and Student, course creation and management, video uploads, and secure Stripe integration for paid courses. The app includes responsive dashboards, authentication, and clean UI design.",
+  techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
+  image: img2,
+  github: "https://github.com/LalitKumarSahu/fullstack-lms-app", 
+  },
+
+  
+  {
+    title: "React Weather App",
     description:
-      "A platform to help pet lovers find pets, connect with owners, and access services like vet assistance, training, and grooming.",
+      "React Weather App Buil a responsive weather application using React.js and Material UI that fetches real-time API. Features include city-based search, dynamic weather dispaly, and responsive design for all screen sizes",
+  
     techStack: [
       <FaReact />,
       <SiTailwindcss />,
@@ -35,37 +51,39 @@ const projects = [
       <SiApachekafka />,
       <SiSocketdotio />,
     ],
-    image: img2,
-    github: "https://github.com/chandannekya/Wagging_Wonders",
-    demo: "#",
-  },
-  {
-    title: "Agent Manager",
-    description:
-      "A MERN stack application for efficient task management with CSV uploads, JWT authentication, and role-based access.",
-    techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
     image: img3,
-    github: "https://github.com/chandannekya/Agent-Manger",
-    demo: "https://agent-manger.vercel.app/",
+    github: "#",
+    demo: "https://lalit-kr.netlify.app/",
   },
   {
-    title: "Schedule EMI Calculator",
+    title: "Ecomerce website",
     description:
-      "Calculates EMIs and displays the amortization schedule, supporting different payment frequencies.",
-    techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiTailwindcss />],
+      "Built a fully responsive online shopping website with product listing, search, filters, and cart functionality using LocalStorage. Features include dynamic UI, category-based filtering, and mobile-friendly design",
+    techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
     image: img4,
-    github: "https://github.com/your-username/schedule-emi-calculator",
-    demo: "http://localhost:5173",
+    github: "#",
+    demo: "https://coderlalit.netlify.app/",
+  },
+ 
+  {
+    title: "Rejouice website clone",
+    description:
+      "Cloned the Rejouice landing page with pixel-perfect design, smooth animations, and responsive layout using vanilla HTML, CSS, and JS. Showcases modern UI/UX replication and frontend skills.",
+    techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
+    image: img5,
+    github: "#",
+    demo: "https://lkrejouice.netlify.app/",
   },
   {
-    title: "Note App",
+    title: "YouTube clone",
     description:
-      "A note-taking app with OTP-based authentication, built using Vite and MERN stack.",
-    techStack: [<FaReact />, <SiMongodb />, <SiExpress />, <SiTailwindcss />],
-    image: img5,
-    github: "https://github.com/chandannekya/NOTES",
-    demo: "https://notes-frontend-6q0b.onrender.com/",
+      "A front-end clone of YouTube built with HTML, CSS, and vanilla JavaScript. It features a responsive layout, video thumbnails, a sidebar menu, a styled search bar, and interactive UI elements. This project helped me strengthen my skills in responsive design, DOM manipulation, and modern web layouts",
+    techStack: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
+    image: img6,
+    github: "https://github.com/LalitKumarSahu/YouTube-Clone",
+    demo: "https://lkyoutube.netlify.app/",
   },
+  
 ];
 
 const Projects = () => {
